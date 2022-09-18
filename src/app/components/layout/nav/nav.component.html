@@ -1,0 +1,7 @@
+<nav>
+    <a routerLink="/" *ngIf="showArrow">
+        <fa-icon class="back-arrow" [icon]="faArrowLeft"></fa-icon>
+    </a>
+    <h1>MovieDB - API</h1>
+    <div *ngIf="showArrow"></div>
+</nav>

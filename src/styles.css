@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --primary-color: #181818;
+    --secondary-color: #8758FF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container{
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.btn{
+  border: none;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 0.25em 1em;
+  background-color: var(--secondary-color);
+  border-radius: 15pt;
+  margin-bottom: 1rem;
+  height: 35px;
+}
+
+@media only screen and (min-width: 800){
+ .container{
+  width: 80%;
+ } 
+}

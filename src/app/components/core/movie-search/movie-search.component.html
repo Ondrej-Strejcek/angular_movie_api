@@ -1,0 +1,24 @@
+<div class="form-flex">
+  <div>
+    <label htmlFor="title">Title</label>
+    <input [(ngModel)]="title" type="text" name="title" id="title" />
+  </div>
+  <div>
+    <label htmlFor="year">Year</label>
+    <input [(ngModel)]="year" type="number" name="year" id="year" />
+  </div>
+  <div>
+    <label htmlFor="type">Type</label>
+    <select [(ngModel)]="type" name="type" id="type">
+      <option value="movie">Movie</option>
+      <option value="series">Series</option>
+      <option value="episode">Episode</option>
+    </select>
+  </div>
+
+  <div>
+    <button (click)="find_btn_handler()" class="btn">
+      <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="container movie">
+  <div class="poster animate_right">
+    <img *ngIf="movie.Poster !== 'N/A'" src="{{ movie.Poster }}" alt="poster" />
+  </div>
+  <h1 class="animate">{{ movie.Title }}</h1>
+  <app-circle-btn (click)="likeMovie(movie.imdbID)" class="animate" [icon]="favorite ? crossHeart : faHeart"></app-circle-btn>
+
+  <div class="animate">
+    <h2>Plot</h2>
+    <p>
+      {{ movie.Plot }}
+    </p>
+  </div>
+
+  <div class="animate">
+    <h2>Genre</h2>
+    <p>{{ movie.Genre }}</p>
+  </div>
+
+  <div class="animate">
+    <h2>Actors</h2>
+    <p>
+      {{ movie.Actors }}
+    </p>
+  </div>
+
+  <div class="animate">
+    <h2>Director</h2>
+    <p>{{ movie.Director }}</p>
+  </div>
+
+  <div class="animate">
+    <h2>Writer</h2>
+    <p>{{ movie.Writer }}</p>
+  </div>
+
+  <div class="animate">
+    <h3>
+      Released - <strong>{{ movie.Released }}</strong>
+    </h3>
+    <h3>
+      Language - <strong>{{ movie.Language }}</strong>
+    </h3>
+    <h3>
+      Country - <strong>{{ movie.Country }}</strong>
+    </h3>
+    <h3>
+      imdbRating - <strong>{{ movie.imdbRating }}/10</strong>
+    </h3>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.form-flex > div {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-flex select {
+  appearance: none;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 15pt;
+  padding: 0.25em 1em;
+  margin: 0.25em 0px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  height: 35px;
+  width: 100%;
+}
+
+.form-flex select:focus {
+  outline: none;
+}
+
+.form-flex input {
+  margin: 0.25em 0px;
+  padding: 0.25em 1em;
+  font-size: 18px;
+  border-radius: 15pt;
+  border: 2px solid var(--secondary-color);
+  height: 35px;
+  width: 100%;
+}
+
+.rotate {
+  animation: rotate 1.5s linear infinite;
+}
+
+@media only screen and (min-width: 1000px) {
+  .form-flex input {
+    width: 200px;
+    margin-left: 10px;
+  }
+  .form-flex select {
+    width: 200px;
+    margin-left: 10px;
+  }
+  .form-flex {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .form-flex > div {
+    flex-direction: row;
+    margin: 0px;
+  }
+  .form-flex button {
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

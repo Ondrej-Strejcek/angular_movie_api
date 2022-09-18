@@ -1,0 +1,9 @@
+.circle-btn{
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    color: whitesmoke;
+    font-size: 22px;
+}

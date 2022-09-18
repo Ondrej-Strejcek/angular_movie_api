@@ -1,0 +1,33 @@
+.poster{
+    margin-top: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    max-width: 500px;
+}
+
+strong{
+    color: var(--secondary-color)
+}
+
+.animate{
+    opacity: 0;
+}
+
+.movie{
+    text-align: center;
+}
+
+@media only screen and (min-width: 700px){
+   .poster{
+    width: 300px;
+    float: right;
+   } 
+
+   .movie{
+    text-align: left;
+   }
+}
